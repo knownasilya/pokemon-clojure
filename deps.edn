@@ -1,0 +1,7 @@
+{:paths ["src"]
+ :deps {metosin/malli {:mvn/version "0.11.0"}
+        clj-http/clj-http {:mvn/version "3.12.3"}
+        cheshire/cheshire {:mvn/version "5.11.0"}
+        org.babashka/cli {:mvn/version "0.4.39"}}
+ :aliases {:run {:exec-fn pokemon.core/run}
+           :cli {:main-opts ["-m" "pokemon.core"]}}}
